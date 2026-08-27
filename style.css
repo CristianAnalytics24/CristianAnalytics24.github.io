@@ -27,6 +27,7 @@ body {
     color: #000;
     margin: auto;
     width: 100%;
+    min-width: 120px;
     text-align: center;
     font-weight: bolder;
 }
@@ -34,7 +35,8 @@ body {
 .titulos_secciones {
     display: flex;
     list-style: none;
-    background-color: #eee;
+    background-color: transparent;
+    min-width: 500px;
 }
 
 .hiperv {
@@ -68,21 +70,24 @@ body {
     margin-bottom: 5%;
 }
 
-.nombre_titulo {
-    width: 100%;
-    height: 5vh;
-    padding: 10% 0 0 0;
-    color: #000;
-    font-size: 350%;
-    font-weight: bold;
-    margin-top: 0;
+.sobranombre {
+    margin: auto;
+}
 
+
+.nombre_titulo {
+    align-content: center;
+    width: 100%;
+    height: 150px;
+    color: #000;
+    font-size: 250%;
+    font-weight: bold;
 }
 
 .subtitulo {
+    align-content: center;
     width: 100%;
-    height: 5vh;
-    padding: 10vh 0;
+    height: 150px;
     color: #000;
     font-size: 150%;
 }
@@ -114,11 +119,13 @@ body {
 }
 
 .contenido_acerca_de_mi {
+    box-sizing: content-box;
     background-color: transparent;
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 1fr;
     font-size: 130%;
     margin-top: 5%;
+    gap: 5px;
 }
 
 h3 > span {
@@ -135,11 +142,11 @@ h3 > span {
     border-radius: .5em;
     background-color: #000;
     color: #eee;
-    width: 60%;
-    margin: 2% 2%;
     align-content: center;
-    padding: 3% 5%;
+    padding: 3% 4%;
     text-align: justify;
+    margin: 5%;
+    min-width: 100px;
 }
 
 
@@ -149,21 +156,16 @@ h3 > span {
     font-size: .8em;
     background-color: #000;
     color: #eee;
-    width: 30%;
     text-align: left;
-    margin: 2% 2%;
-    padding-right: 1%;
-    padding-left: 1%;
     align-content: center;
+    margin: 7%;
+    min-width: 200px;
 }
 
 .acerca_nombre, .acerca_mail, .acerca_edad, .acerca_nacionalidad  {
     background-color: transparent;
-    border-bottom: 2px solid #eee;
-    padding: 20px 0 20px 0;
-    margin-top: 0;
-    margin-bottom: 0;
-
+    padding: 20px 2% 20px 2%;
+    text-align: center;
 }
 
 
@@ -193,7 +195,7 @@ h3 > span {
     margin-top: 5%;
     background-color: transparent;
     color: #eee;
-    margin-bottom: 10%;
+    margin-bottom: 0;
 }
 
 .linea1_quehago {
@@ -227,6 +229,155 @@ h3 > span {
 .skillcontenido1, .skillcontenido2, .skillcontenido3, .skillcontenido4 {
     margin: 0 5% 3% 5%;
 }
+
+.boxskills {
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #000;
+    align-content: center;
+}
+
+.myskills {
+    margin: 0;
+    font-weight: 900;
+    color: #000;
+}
+
+.barrasskills {
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+
+.herrmientas1, .herrmientas2 {
+    list-style: none;
+    color: #eee;
+    border-radius: 8px;
+    padding: 2% 2%;
+    margin-bottom: 6% ;
+    background-color: #000;
+    width: 42%;
+}
+
+.herrmientas2 {
+    margin-left: 32px;
+}
+
+.herrmientas1 > li {
+    padding: 5px 0;
+}
+
+.herrmientas2 > li {
+    padding: 5px 0;
+}
+
+
+.habilidad1, .habilidad2, .habilidad3, .habilidad4, .habilidad5, .habilidad6, .habilidad7, .habilidad8, .habilidad9, .habilidad10 {
+    display: flex;
+    
+}
+
+.software1, .software2, .software3, .software4, .software5, .software6, .software7, .software8, .software9, .software10 {
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.porcentaje1, .porcentaje2, .porcentaje3, .porcentaje4, .porcentaje5, .porcentaje6, .porcentaje7, .porcentaje8, .porcentaje9, .porcentaje10 {
+    align-content: end;
+}
+
+.barra1 {
+    background-color: red;
+    color: #eee;
+    width: 100%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra2 {
+    background-color: red;
+    color: #eee;
+    width: 80%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra3 {
+    background-color: red;
+    color: #eee;
+    width: 60%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra4 {
+    background-color: red;
+    color: #eee;
+    width: 0%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra5 {
+    background-color: red;
+    color: #eee;
+    width: 50%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra6 {
+    background-color: red;
+    color: #eee;
+    width: 40%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra7 {
+    background-color: red;
+    color: #eee;
+    width: 60%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra8 {
+    background-color: red;
+    color: #eee;
+    width: 60%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra9 {
+    background-color: red;
+    color: #eee;
+    width: 40%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
+.barra10 {
+    background-color: red;
+    color: #eee;
+    width: 40%;
+    height: 5px;
+    border-radius: 2em;
+    margin: 5px 0 20px 0;
+}
+
 
 
 /*Aqui empieza la Formación*/
@@ -347,154 +498,8 @@ h3 > span {
     padding: 2px 0;
 }
 
-.boxskills {
-    margin-left: 5%;
-    margin-top: 0;
-    color: #000;
-    align-content: center;
-}
 
-.myskills {
-    margin: 0;
-    font-weight: 900;
-    color: #000;
-}
-
-.barrasskills {
-    display: flex;
-    box-sizing: content-box;
-    width: 100%;
-}
-
-
-.herrmientas1, .herrmientas2 {
-    list-style: none;
-    color: #eee;
-    border-radius: 8px;
-    padding: 2% 2%;
-    margin-bottom: 6% ;
-    background-color: #000;
-    width: 42%;
-}
-
-.herrmientas2 {
-    margin-left: 32px;
-}
-
-.herrmientas1 > li {
-    padding: 5px 0;
-}
-
-.herrmientas2 > li {
-    padding: 5px 0;
-}
-
-
-.habilidad1, .habilidad2, .habilidad3, .habilidad4, .habilidad5, .habilidad6, .habilidad7, .habilidad8, .habilidad9, .habilidad10 {
-    display: flex;
-    
-}
-
-.software1, .software2, .software3, .software4, .software5, .software6, .software7, .software8, .software9, .software10 {
-    padding-left: 10px;
-    width: 500px;
-}
-
-
-.porcentaje1, .porcentaje2, .porcentaje3, .porcentaje4, .porcentaje5, .porcentaje6, .porcentaje7, .porcentaje8, .porcentaje9, .porcentaje10 {
-    margin-left: 100px;
-}
-
-.barra1 {
-    background-color: red;
-    color: #eee;
-    width: 100%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra2 {
-    background-color: red;
-    color: #eee;
-    width: 80%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra3 {
-    background-color: red;
-    color: #eee;
-    width: 60%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra4 {
-    background-color: red;
-    color: #eee;
-    width: 0%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra5 {
-    background-color: red;
-    color: #eee;
-    width: 50%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra6 {
-    background-color: red;
-    color: #eee;
-    width: 40%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra7 {
-    background-color: red;
-    color: #eee;
-    width: 60%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra8 {
-    background-color: red;
-    color: #eee;
-    width: 60%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra9 {
-    background-color: red;
-    color: #eee;
-    width: 40%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
-.barra10 {
-    background-color: red;
-    color: #eee;
-    width: 40%;
-    height: 5px;
-    border-radius: 2em;
-    margin: 5px 0 20px 0;
-}
-
+/*Comienzan los proyectos*/
 .proyectos {
     align-content: center;
     padding-top: 8%;
@@ -521,7 +526,7 @@ h3 > span {
 .linea {
     background-color: transparent;
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 40% 1fr;
     margin-bottom: 1%;
     padding-bottom: 1%;
     border-bottom: 2px solid #000 ;
@@ -530,7 +535,10 @@ h3 > span {
 .encabezado_sistema{
     color: #000;
     margin: auto;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    min-width: 200px;
+    text-align: center;
 }
 
 .tarjetas {
@@ -539,7 +547,7 @@ h3 > span {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
     height: 250px;
 }
 
