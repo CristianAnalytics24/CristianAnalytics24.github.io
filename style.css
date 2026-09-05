@@ -530,7 +530,7 @@ h3 > span {
 }
 
 .boardproyectos1 {
-    background: linear-gradient(to right, transparent, black ),url("/images/projectos/powerbi_horasextras/index.png");
+    background: linear-gradient(to right, transparent, black ),url("images/projectos/powerbi_horasextras/index.png");
     background-size: contain;
     background-position: 30px;
     border-radius: .8em;
