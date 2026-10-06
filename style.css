@@ -523,72 +523,35 @@ h3 > span {
     background-color: transparent;
 }
 
-.linea1 {
+.linea1, .linea2, .linea3, .linea4, .linea5 {
     margin-bottom: 1%;
-    height: 80vh;
+    height: 100vh;
     padding: 1%;
 }
 
-.boardproyectos1 {
-    background: linear-gradient(to right, transparent, black ),url("images/projectos/powerbi_horasextras/index.png");
+.boardproyectos, .boardproyectos3, .boardproyectos5 {
+    background: linear-gradient(to right, #eee, black ),url();
     background-size: contain;
-    background-position: 30px;
     border-radius: .8em;
     width: 95%;
     height: 95%;
     margin: auto;
     padding: 1%;
-    display: grid;
-    grid-template-columns: 75% 25%;
+    display: flex;
+    border: solid 2px black;
 }
 
-.boardproyectos2 {
-    background: linear-gradient(to left, transparent, black ),#999;
+.boardproyectos2, .boardproyectos4 {
+    background: linear-gradient(to right, black, #eee ),url();
+    background-size: contain;
     border-radius: .8em;
     width: 95%;
     height: 95%;
     margin: auto;
     padding: 1%;
-    display: grid;
-    grid-template-columns: 25% 75%;
+    display: flex;
+    border: solid 2px black;
 }
-
-.boardproyectos3 {
-    background: linear-gradient(to right, transparent, black ), #999;
-    background-size: auto ;
-    border-radius: .8em;
-    width: 95%;
-    height: 95%;
-    margin: auto;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
-.boardproyectos4 {
-    background: linear-gradient(to left, transparent, black ), #999;
-    background-size: auto ;
-    border-radius: .8em;
-    width: 95%;
-    height: 95%;
-    margin: auto;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
-
-.boardproyectos5 {
-    background: linear-gradient(to right, transparent, black ),#999;
-    background-size: auto ;
-    border-radius: .8em;
-    width: 95%;
-    height: 95%;
-    margin: auto;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
 
 .detalleproyecto1 {
     background-color: black;
@@ -596,6 +559,7 @@ h3 > span {
     height: 100%;
     border-radius: .8em;
     border: solid 2px #ddd; 
+    margin: auto .5%;
 }
 
 .descripcion_proyecto1 {
@@ -653,18 +617,31 @@ h3 > span {
     font-size: 70%;
 }
 
-.fotopowerbi1 {
-    background-image: url("/images/projectos/powerbi_horasextras/index.png");
-    background-size: 100%;
-    margin:auto;
-    width: 80%;
-    height: 100%;
-    border-radius: .9em;
+.logo_horasextras {
+    width: 50%;
+    height: 25%;
+    size: 40%;
+    margin: 5%;
 }
 
-.logopowerbi, .logotablue, .sqlpython{
-    width: 30%;
-    size: 30%;
+.dash_horasextras {
+    background-size: 100%;
+    margin: 10% auto;
+    width: 95%;
+    height: 100%;
+    border-radius: .9em;
+    border: 2px solid #eee    ;
+}
+
+.logopowerbi, .logotablue {
+    width: 50%;
+    size: 40%;
+    margin: 5%;
+}
+
+.sqlpython {
+    width: 40%;
+    size: 40%;
     margin: 5%;
 }
 
