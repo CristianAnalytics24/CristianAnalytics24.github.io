@@ -9,46 +9,35 @@
     <link rel="stylesheet" href="style.css">
     <body>
         <nav class="barra_encabezado">
-            <div class="nombre_principal">
-                <h2>Portafolio</h2>
-            </div>
-            <ul class="titulos_secciones">
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
-                        <a href="#inicio_link" class="hiperv">Inicio</a>
-                    </div>
+            <div class="minibarra">
+                <div class="nombre_principal">
+                    <h2>Portafolio</h2>
                 </div>
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
+                <div class="titulos_secciones">
+                    <div class="encabezadocaja">
+                        <a href="#inicio_link" class="hiperv">Inicio</a></div>
+                    <div class="encabezadocaja">
                         <a href="#acerca_de_link" class="hiperv">Acerca de mi</a>
                     </div>
-                </div>
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
+                    <div class="encabezadocaja">
                         <a href="#perfil_link" class="hiperv">Perfil</a>
                     </div>
-                </div>
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
+                    <div class="encabezadocaja">
                         <a href="#formacion_link" class="hiperv">Curriculum</a>
                     </div>
-                </div>
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
+                    <div class="encabezadocaja">
                         <a href="#proyectos_link" class="hiperv">Portafolio</a>
                     </div>
-                </div>
-                <div class="encabezadocaja">
-                    <div class="encabezadotitulo">
+                    <div class="encabezadocaja">
                         <a href="#contacto_link" class="hiperv">Contacto</a>
-                    </div>
-                </div>           
-            </ul>
+                    </div>           
+                </div>
+            </div>
         </nav>
         <section class="inicio" id="inicio_link">
             <div class="sobranombre">
                 <h1 class="nombre_titulo"><strong>Cristian Alejandro Carrillo Hernández</strong></h1>
-                <p class="subtitulo">Analista financiero y Analista de datos jr</p>
+                <p class="subtitulo">Control Financiero • Inteligencia de Negocio • Transformación de Procesos</p>
             </div>
         </section>
 
@@ -59,11 +48,18 @@
             </div>
             <div class="contenido_acerca_de_mi">
                 <div class="resumen"> 
-                    <h3 class="inicioresume">Soy <span>Cristian Carrillo,</span> un analista de datos en formación</h3>
-                    <p>Profesional orientado a la optimización de procesos y la resolución de problemáticas operativas, mediante el uso y análisis estructurado de la información. <br><br> Cuento con experiencia involucrándome directamente en la operación para comprender los flujos de trabajo, estructurar la información y detectar oportunidades de mejora. <br> <br>Me caracterizo por ser autodidacta y enfocado en el aprendizaje continuo, con un enfoque en transformar la información en insumos útiles que fortalezcan la eficiencia, el control y la toma de decisiones. </p>
-                    <p>Profesional orientado a la optimización de procesos y la resolución de problemáticas operativas, mediante el uso y análisis estructurado de la información. <br><br> Cuento con experiencia involucrándome directamente en la operación para comprender los flujos de trabajo, estructurar la información y detectar oportunidades de mejora. <br> <br>Me caracterizo por ser autodidacta y enfocado en el aprendizaje continuo, con un enfoque en transformar la información en insumos útiles que fortalezcan la eficiencia, el control y la toma de decisiones. </p>
+                    <div class="cuadroresumen">
+                        <h3 class="inicioresume">Soy <span>Cristian Carrillo,</span> un analista de datos en formación</h3>
+                        <p class="textoacerca">Persona analítica, curiosa y comprometida con el aprendizaje continuo. Disfruto comprender cómo funcionan los procesos, cuestionar lo establecido e identificar oportunidades de mejora que generen un impacto real. Mi experiencia profesional en áreas administrativas y financieras me ha permitido desarrollar una visión práctica del negocio y entender la importancia de los detalles, la organización y la toma de decisiones basada en información.<br></br>
+                        Más allá de mis responsabilidades diarias, me apasiona aprender, construir proyectos y enfrentar nuevos desafíos. Encuentro especial interés en aquellos espacios donde convergen los procesos, los datos y la tecnología, ya que considero que la mejora continua nace de entender cómo funcionan las cosas y atreverse a transformarlas.<br></br>
+                        Me caracterizo por mantener una mentalidad de crecimiento constante, buscando siempre ampliar mis conocimientos, adquirir nuevas perspectivas y desarrollar habilidades que me permitan aportar cada vez más valor. Creo firmemente que la curiosidad, la disciplina y la capacidad de adaptación son algunos de los pilares más importantes para cualquier profesional.<br></br>
+                        </p>
+                    </div>
                 </div> 
                 <div class="items_acerca">
+                    <div class="cuadrofoto">
+                        <img src="images/personal/fotoperfil.jpg" alt="" class="fotocris">
+                    </div>
                     <p class="acerca_nombre"><span>Nombre: </span>Cristian Alejandro Carrillo Hernández</p>
                     <p class="acerca_mail"><span>Correo: </span>carcris14@outlook.com</p>
                     <p class="acerca_edad"><span>Edad: </span>24</p>
@@ -76,91 +72,96 @@
         <section class="que_hago" id="perfil_link">
             <h2 class="que_hago_titulo">Perfil</h2>
             <div class="conteindo_quehago">
-                <div class="linea1_quehago">
-                    <div class="skills1">
-                        <div class="skillcontenido1">
-                            <h3 class="skilltitlo1">Automatización de proceso</h3>
-                            <p class="skilltexto1">Me dedico a crear flujos/script para la automatizacion de procesos operativos con el fin de reducir tiempos y mejorar la eficiencia en los procesos.</p>
+                <div class="boxquehago">
+                    <div class="linea1_quehago">
+                        <div class="skills1">
+                            <div class="skillcontenido1">
+                                <h3 class="skilltitlo1">Control Financiero y Operativo</h3>
+                                <p class="skilltexto1">Participación en procesos financieros y administrativos enfocados en la gestión de gastos, conciliación de información y seguimiento de operaciones, contribuyendo al control y cumplimiento de los objetivos del negocio.</p>
+                            </div>
+                        </div>
+                        <div class="skills2">
+                            <div class="skillcontenido2">
+                                <h3 class="skilltitlo2">Inteligencia de Negocio</h3>
+                                <p class="skilltexto2">Capacidad para integrar datos provenientes de distintas áreas del negocio, convirtiéndolos en información accionable mediante análisis, monitoreo de indicadores e identificación de oportunidades de mejora.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills2">
-                        <div class="skillcontenido2">
-                            <h3 class="skilltitlo2">Procesos logisticos</h3>
-                            <p class="skilltexto2">Me dedico a crear flujos/script para la automatizacion de procesos operativos con el fin de reducir tiempos y mejorar la eficiencia en los procesos.</p>
+                    <div class="linea2_quehago">
+                        <div class="skills3">
+                            <div class="skillcontenido3">
+                                <h3 class="skilltitlo3">Transformación de Procesos</h3>
+                                <p class="skilltexto3">Impulso de iniciativas de digitalización, estandarización y mejora continua orientadas a incrementar la eficiencia y confiabilidad de la operación.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="linea2_quehago">
-                    <div class="skills3">
-                        <div class="skillcontenido3">
-                            <h3 class="skilltitlo3">Diseño de paginas web</h3>
-                            <p class="skilltexto3">Me dedico a crear flujos/script para la automatizacion de procesos operativos con el fin de reducir tiempos y mejorar la eficiencia en los procesos.</p>
+                        <div class="skills4">
+                            <div class="skillcontenido4">
+                                <h3 class="skilltitlo4">Tecnología Aplicada al Negocio</h3>
+                                <p class="skilltexto4">Desarrollo e implementación de soluciones tecnológicas que automatizan tareas, optimizan flujos de trabajo y generan valor a través de la información.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills4">
-                        <div class="skillcontenido4">
-                            <h3 class="skilltitlo4">Analista de datos</h3>
-                            <p class="skilltexto4">Me dedico a crear dashboars de analisis en power bi asi como analisis en usando herramientas de programacion para crear modelos de machine learnign</p>
-                        </div>
+
                     </div>
                 </div>
                 <div class="boxskills">
-                    <h3 class="myskills">Manejo de herramientas</h3>
-                    <div class="barrasskills">
-                        <ul class="herrmientas1">
-                            <div class="habilidad1">
-                                <li class="software1">Excel</li>
-                                <li class="porcentaje1" >100%</li>   
-                            </div>
-                                <li class="barra1" title="100%"></li>
-                            <div class="habilidad2">
-                                <li class="software2">Power Pivot / Power Query</li>
-                                <li class="porcentaje2">80%</li>
-                            </div>
-                                <li class="barra2"></li>
-                            <div class="habilidad3">
-                                <li class="software3">Power BI</li>
-                                <li class="porcentaje3">60%</li>
-                            </div>
-                                <li class="barra3"></li>
-                            <div class="habilidad4">
-                                <li class="software4">Tableu</li>
-                                <li class="porcentaje4">0%</li>
-                            </div>
-                                <li class="barra4"></li>
-                            <div class="habilidad5">
-                                <li class="software5">SQL</li>
-                                <li class="porcentaje5">50%</li>
-                            </div>
-                                <li class="barra5"></li>
-                        </ul>
-                        <ul class="herrmientas2">
-                            <div class="habilidad6">
-                                <li class="software6">Python</li>
-                                <li class="porcentaje6">40%</li>   
-                            </div>
-                                <li class="barra6"></li>
-                            <div class="habilidad7">
-                                <li class="software7">HTML / CSS</li>
-                                <li class="porcentaje7">60%</li>   
-                            </div>
-                                <li class="barra7"></li>
-                            <div class="habilidad8">
-                                <li class="software8">Power Automate / N8N</li>
-                                <li class="porcentaje8">60%</li>   
-                            </div>
-                                <li class="barra8"></li>
-                            <div class="habilidad9">
-                                <li class="software9">Git / Git Hub</li>
-                                <li class="porcentaje9">40%</li>   
-                            </div>
-                                <li class="barra9"></li>
-                            <div class="habilidad10">
-                                <li class="software10">SAP</li>
-                                <li class="porcentaje10">40%</li>   
-                            </div>
-                                <li class="barra10"></li>
-                        </ul>
+                    <div class="subboxskills">
+                        <h3 class="myskills">Manejo de herramientas</h3>
+                        <div class="barrasskills">
+                            <ul class="herrmientas1">
+                                <div class="habilidad1">
+                                    <li class="software1">Excel</li>
+                                    <li class="porcentaje1" >100%</li>   
+                                </div>
+                                    <li class="barra1" title="100%"></li>
+                                <div class="habilidad2">
+                                    <li class="software2">Power Pivot / Power Query</li>
+                                    <li class="porcentaje2">80%</li>
+                                </div>
+                                    <li class="barra2"></li>
+                                <div class="habilidad3">
+                                    <li class="software3">Power BI</li>
+                                    <li class="porcentaje3">60%</li>
+                                </div>
+                                    <li class="barra3"></li>
+                                <div class="habilidad4">
+                                    <li class="software4">Tableu</li>
+                                    <li class="porcentaje4">0%</li>
+                                </div>
+                                    <li class="barra4"></li>
+                                <div class="habilidad5">
+                                    <li class="software5">SQL</li>
+                                    <li class="porcentaje5">50%</li>
+                                </div>
+                                    <li class="barra5"></li>
+                            </ul>
+                            <ul class="herrmientas2">
+                                <div class="habilidad6">
+                                    <li class="software6">Python</li>
+                                    <li class="porcentaje6">40%</li>   
+                                </div>
+                                    <li class="barra6"></li>
+                                <div class="habilidad7">
+                                    <li class="software7">HTML / CSS</li>
+                                    <li class="porcentaje7">60%</li>   
+                                </div>
+                                    <li class="barra7"></li>
+                                <div class="habilidad8">
+                                    <li class="software8">Power Automate / N8N</li>
+                                    <li class="porcentaje8">60%</li>   
+                                </div>
+                                    <li class="barra8"></li>
+                                <div class="habilidad9">
+                                    <li class="software9">Git / Git Hub</li>
+                                    <li class="porcentaje9">40%</li>   
+                                </div>
+                                    <li class="barra9"></li>
+                                <div class="habilidad10">
+                                    <li class="software10">SAP</li>
+                                    <li class="porcentaje10">40%</li>   
+                                </div>
+                                    <li class="barra10"></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,46 +172,48 @@
             <div class="boxcurrulum">
                 <h2 class="formacion_titulo">Curriculum</h2>
                 <div class="contenido_formacion">
-                    <div class="educacion">
+                    <div class="t1formacion">
                         <h3 class="tituloformacion">Fromación Academica</h3>
-                        <div class="eduacion_universidad">
-                            <h3 class="eduaciontitulouni">Ingeniería en Sistemas Computacionales</h3>
-                            <p class="eduacionperiodouni">2026 - Actualidad</p>
-                            <p class="educaciontextouni">Universidad de Virtual de Guanajuato</p>
-                        </div>
-                        <div class="eduacion_preparatoria">
-                            <h3 class="eduaciontituloprepa">Profesional Técnico Bachiller en Contabilidad</h3>
-                            <p class="eduacionperiodoprepa">2017 - 2020</p>
-                            <p class="educaciontextoprepa">Conalep Plantel León ll</p>
-                        </div>
-                        <div class="certificacion_finanzas">
-                                <h3 class="eduaciontitulocert">Finanzas Corporativas</h3>
-                                <p class="eduacionperiodocert">2026 - 2026</p>
-                                <p class="educaciontextocert">Coursera</p>
-                        </div>
-                        <div class="eduacion_ingles">
-                                <h3 class="eduaciontitloingles">Bussines English 1</h3>
-                                <p class="eduacionperiodoingles">2026 - 2026</p>
-                                <p class="educaciontextoingles">Santander Open Academy</p>
-                        </div>
-                        <div class="eduacion_ingles2">
-                                <h3 class="eduaciontitloingles2">Bussines English 1</h3>
-                                <p class="eduacionperiodoingles2">2026 - 2026</p>
-                                <p class="educaciontextoingles2">Santander Open Academy</p>
+                    </div>
+                    <div class="t2formacion">
+                        <div class="educacion">
+                            <div class="eduacion_universidad">
+                                <p class="eduacionperiodouni">2026 - Actualidad</p>
+                                <h3 class="eduaciontitulouni">Ingeniería en Sistemas Computacionales</h3>
+                                <p class="educaciontextouni">Universidad de Virtual de Guanajuato</p>
+                            </div>
+                            <div class="eduacion_preparatoria">
+                                <p class="eduacionperiodoprepa">2017 - 2020</p>
+                                <h3 class="eduaciontituloprepa">Profesional Técnico Bachiller en Contabilidad</h3>
+                                <p class="educaciontextoprepa">Conalep Plantel León ll</p>
+                            </div>
+                            <div class="certificacion_finanzas">
+                                    <p class="eduacionperiodocert">2026 - 2026</p>
+                                    <h3 class="eduaciontitulocert">Finanzas Corporativas</h3>
+                                    <p class="educaciontextocert">Coursera</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="experiencia">
-                        <h3 class="tituloexp">Experiencia profesional y acciones destacadas</h3>
+                    <div class="t1experiencia">
+                        <div class="experiencia">
+                            <h3 class="tituloexp">Experiencia profesional y acciones destacadas</h3>
+                        </div>
+                        <div class="subboxexp1">
                             <div class="experienciaharly">
-                                <h3 class="experienciatitlo1">Servicios Mulza S.A de C.V.</h3>
-                                <h4 class="empresa1ano">2025 - 2027</h4>
+                                <h3 class="experienciatitlo1">Corporativo Charly</h3>
+                                <h4 class="empresa1ano">2025 - Actualmente</h4>
                                 <h4 class="empresa1">Control de Egresos</h4>
                                 <ul class="contenidopuesto1">
-                                    <li>Control y análisis del fondo fijo de gerencia y tiendas retail (Charly y Skechers), utilizando Excel para asegurar la trazabilidad y control de los gastos.</li>
-                                    <li>Validación y seguimiento de información operativa y financiera, incluyendo incidencias en tiendas, reclasificaciones y control de faltantes.</li>
-                                    <li>Manejo de bases de datos, realizando cruces y validaciones para garantizar la consistencia de la información.</li>
+                                    <li>Gestión y control de gastos administrativos de 240 sucursales (CH y SKX)</li>
+                                    <li>Revisión, validación y corrección de registros asociados a cuentas de gasto.</li>
+                                    <li>Elaboración de reclasificaciones y traspasos de presupuesto para distintas áreas del corporativo.</li>
+                                    <li>Participación en procesos de conciliación financiera para operaciones Retail, E-commerce y Marketplace</li>
+                                    <li>Seguimiento de incidencias y análisis de variaciones en la información financiera.</li>
+                                    <li>Apoyo en la automatización y mejora de procesos administrativos mediante herramientas tecnológicas.</li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="subboxexp1">
                             <div class="experiencialiverpool">
                                 <h3 class="experienciatitlo2">Distribuidora Liverpol S.A. de C.V.</h3>
                                 <h4 class="empresa2ano">2020 - 2025</h4>
@@ -232,6 +235,7 @@
                                     <li>Participación en iniciativas de mejora continua orientadas a optimizar procesos logísticos y apoyar la toma de decisiones basada en datos.</li>
                                 </ul>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,12 +256,9 @@
                                         El mootivo de analisis es porque el equipo de recursos humanos implento un modelo de trabajo enfocado a la rotacion de personal para asi poder reduir el numero de horas extras sin afectar la operacio y a sus ventas.
                                         </p>
                                         <div class="linkproyectos" >
-                                            <a href="../Power_BI/proyectopb.html" class="links" target="_blank">Ver proyecto</a>
+                                            <a href="proyectos_pages/power_bipage/pb_no_deducibles/no_deducibles_pages1.html" class="links" target="_blank">Ver proyecto</a>
                                         </div>
-                                    <img src="images/projectos/powerbi_horasextras/index.png" class="dash_horasextras">     
-                                    <div class="dificultadproyecto1">
-                                        <p>Dificultad: Baja</p>
-                                    </div>                               
+                                    <img src="images/projectos/powerbi_horasextras/index.png" class="dash_horasextras">                             
                                 </div>
                             </div>
                             <div class="detalleproyecto1">
@@ -435,22 +436,24 @@
             <div class="boxcontacto">
                 <h2 class="contacto_titulo">Información de contacto</h2>
                 <div class="contenidocontacto">
-                    <div class="referencias">
-                        <h4>Año de publicación</h4>
-                        <p>2026 Cristian Alejandro</p> 
-                    </div>
-                    <div class="referencias">
-                        <h4>Paginas de contacto</h4>
-                        <ul>
-                            <li class="linkdin"><a href="" target="_blank" class="referenciaslink">Linkedin</a></li>
-                            <li class="tiwter"><a href="" target="_blank" class="referenciaslink">X</a></li>
-                            <li class="github"><a href="" target="_blank" class="referenciaslink">GitHub</a></li>
-                        </ul>
-                    </div>
-                    <div class="referencias">
-                        <h4>Informacion personal</h4>
-                        <p>Telefono:</p>
-                        <p>Correo: </p>
+                    <div class="t1contacto">
+                        <div class="referencias">
+                            <h4>Año de publicación</h4>
+                            <p>2026 Cristian Alejandro</p> 
+                        </div>
+                        <div class="referencias">
+                            <h4>Paginas de contacto</h4>
+                            <ul>
+                                <li class="linkdin"><a href="" target="_blank" class="referenciaslink">Linkedin</a></li>
+                                <li class="tiwter"><a href="" target="_blank" class="referenciaslink">X</a></li>
+                                <li class="github"><a href="" target="_blank" class="referenciaslink">GitHub</a></li>
+                            </ul>
+                        </div>
+                        <div class="referencias">
+                            <h4>Informacion personal</h4>
+                            <p>Telefono:</p>
+                            <p>Correo: </p>
+                        </div>
                     </div>
                 </div>
             </div>

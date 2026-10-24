@@ -4,10 +4,9 @@ html {
 
 body {
     background-color: #eee;
-    background-size: 100%;
     font-family:Arial, Helvetica, sans-serif;
-    width: 100%;
     color: #eee;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -17,26 +16,31 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    display: grid;
-    grid-template-columns: 20% 1fr;
+    width: 100%;
     border-bottom: 2px solid #000;
+    margin-top: 0;
 }
 
+.minibarra {
+    display:grid;
+    grid-template-columns: 18% 1fr;
+    margin: auto;
+    margin-top: 0;
+    width: 50%;
+}
 
 .nombre_principal {
     color: #000;
     margin: auto;
+    font-size: 1vw;
     width: 100%;
-    min-width: 120px;
-    text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .titulos_secciones {
     display: flex;
     list-style: none;
-    background-color: transparent;
-    min-width: 500px;
+    width: 100%;
 }
 
 .hiperv {
@@ -45,28 +49,29 @@ body {
 }
 
 .encabezadocaja {
-    margin: auto;
-}
-
-.encabezadotitulo{
     color: #000;
     font-weight: bold;
+    margin: auto 4%;
+    font-size: .8vw;
+    width: auto;
+    text-align: center;
 }
 
-.encabezadotitulo > .hiperv:hover {
+.encabezadocaja > .hiperv:hover {
     color: red;
     font-weight: bold;
 }
 
+
+/*Empieza el texto*/
+
 .inicio {
-    background-image: url("");
     width: 100%;
-    min-height: 90vh;
+    height: 90vh;
     text-align: center;
     align-content: center;
     margin-top: 0;
-    margin-bottom: 00;
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 5%;
 }
 
@@ -80,7 +85,7 @@ body {
     width: 100%;
     height: 150px;
     color: #000;
-    font-size: 250%;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -89,7 +94,7 @@ body {
     width: 100%;
     height: 150px;
     color: #000;
-    font-size: 150%;
+    font-size: 1vw;
 }
 
 
@@ -99,6 +104,7 @@ body {
     background-color: #ddd;
     padding-top: 8%;
     padding-bottom: 10%;
+    border-radius: .4em;
 }
 
 .encabezado_acerca {
@@ -107,25 +113,23 @@ body {
 }
 
 .acerca_titulo {
-    border-radius: .5em;
-    width: 99.5%;
-    min-width: 250px;
-    height: 40px;
+    border-radius: .4em;
+    width: 99%;
+    height: 50%;
     background-color: #000;
     text-align: center;
     align-content: center;
-    font-size: 160%;
-    margin-left: .2%;
+    font-size: 1.5vw;
+    margin: auto;
 }
 
 .contenido_acerca_de_mi {
-    box-sizing: content-box;
     background-color: transparent;
+    width: 50%;
     display: grid;
-    grid-template-columns: 60% 1fr;
-    font-size: 130%;
-    margin-top: 5%;
-    gap: 5px;
+    grid-template-columns: 70% 1fr;
+    margin: 5% auto;
+    column-gap: 5%;
 }
 
 h3 > span {
@@ -134,62 +138,69 @@ h3 > span {
 }
 
 .inicioresume {
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .resumen {
-    font-size: .8em;
-    border-radius: .5em;
+    margin: auto;
+    border-radius: .4em;
     background-color: #000;
+    padding: 5%;
+}
+
+.cuadroresumen {
+    width: 100%;
+    font-size: 1vw;
     color: #eee;
     align-content: center;
-    padding: 3% 4%;
+    margin: auto;
     text-align: justify;
-    margin: 5%;
-    min-width: 100px;
+}
+
+.items_acerca {
+    width: 100%;
+    border-radius: .4em;
+    font-size: 1vw;
+    background-color: #000;
+    color: #eee;
+    margin: 0 auto;
+    
 }
 
 
-.items_acerca {
-    font-weight: bold;
-    border-radius: 8px;
-    font-size: .8em;
-    background-color: #000;
-    color: #eee;
-    text-align: left;
-    align-content: center;
-    margin: 7%;
-    min-width: 200px;
+.fotocris{
+    width: 90%;
+    height: 40%;
+    border-radius: .4em;
+    margin: .2vw 0 0 .6vw;
 }
 
 .acerca_nombre, .acerca_mail, .acerca_edad, .acerca_nacionalidad  {
     background-color: transparent;
-    padding: 20px 2% 20px 2%;
+    margin: 15% auto;
     text-align: center;
+    font-weight: bold;
 }
 
 
 /*Aqui empieza el Que Hago*/
 
-.que_hago { 
-    align-content: center;
+.que_hago {
     padding-top: 8%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
+    border-radius: .4em;
 }
 
 .que_hago_titulo {
-    color: #eee;
-    border-radius: .5em;
-    width: 99.5%;
-    min-width: 250px;
-    height: 40px;
+    border-radius: .4em;
+    width: 99%;
+    height: 50%;
     background-color: #000;
     text-align: center;
     align-content: center;
-    font-size: 160%;
-    margin-left: .2%;
+    font-size: 1.5vw;
+    margin: auto;
 }
-
 
 .conteindo_quehago {
     margin-top: 5%;
@@ -198,70 +209,77 @@ h3 > span {
     margin-bottom: 0;
 }
 
+.boxquehago {
+    margin: auto;
+    width: 50%;
+}
+
 .linea1_quehago {
-    background-color: transparent;
-    display: flex;
-    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2.5%;
+    margin-left: 1.4vw;
 }
 
 .linea2_quehago {
-    background-color: transparent;
-    display: flex;
-    padding: 2% 10%;
-    padding-top: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 1.4vw;
 }
 
-.skills1, .skills3 {
+.skills1, .skills3, .skills2, .skills4 {
     display: flex;
     background-color: #000;
-    width: 70%;
-    border-radius: .5em;
-}
-
-.skills2, .skills4 {
-    display: flex;
-    background-color: #000;
-    width: 70%;
-    border-radius: .5em;
-    margin-left: 5%;
+    width: 95%;
+    border-radius: .4em;
+    font-size: 1.5vw;
 }
 
 .skillcontenido1, .skillcontenido2, .skillcontenido3, .skillcontenido4 {
     margin: 0 5% 3% 5%;
+    font-size: 1vw;
+    text-align: justify;
 }
 
+/*herramientas*/
+
 .boxskills {
-    margin-left: 5%;
     margin-top: 5%;
     color: #000;
-    align-content: center;
+}
+
+.subboxskills {
+    margin: auto;
+    margin-top: 10%;
 }
 
 .myskills {
-    margin: 0;
     font-weight: 900;
     color: #000;
+    width: 50%;
+    margin: auto;
+    font-size: 1vw;
 }
 
 .barrasskills {
-    display: flex;
-    box-sizing: content-box;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    margin: auto;
 }
 
 
 .herrmientas1, .herrmientas2 {
     list-style: none;
     color: #eee;
-    border-radius: 8px;
-    padding: 2% 2%;
-    margin-bottom: 6% ;
+    border-radius: .4em;
+    padding: 4%;
     background-color: #000;
-    width: 42%;
+    width: 90%;
 }
 
 .herrmientas2 {
-    margin-left: 32px;
+    margin-left: .7vw;
 }
 
 .herrmientas1 > li {
@@ -281,101 +299,93 @@ h3 > span {
 .software1, .software2, .software3, .software4, .software5, .software6, .software7, .software8, .software9, .software10 {
     padding-left: 10px;
     width: 100%;
+    font-size: 1vw;
 }
 
 
 .porcentaje1, .porcentaje2, .porcentaje3, .porcentaje4, .porcentaje5, .porcentaje6, .porcentaje7, .porcentaje8, .porcentaje9, .porcentaje10 {
     align-content: end;
+    font-size: 1vw;
 }
 
 .barra1 {
     background-color: red;
-    color: #eee;
     width: 100%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra2 {
     background-color: red;
-    color: #eee;
     width: 80%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra3 {
     background-color: red;
-    color: #eee;
     width: 60%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra4 {
     background-color: red;
-    color: #eee;
     width: 0%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra5 {
     background-color: red;
-    color: #eee;
     width: 50%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 1vh 0;
 }
 
 .barra6 {
     background-color: red;
-    color: #eee;
     width: 40%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra7 {
     background-color: red;
-    color: #eee;
     width: 60%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra8 {
     background-color: red;
-    color: #eee;
     width: 60%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra9 {
     background-color: red;
-    color: #eee;
     width: 40%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 2.2vh 0;
 }
 
 .barra10 {
     background-color: red;
-    color: #eee;
     width: 40%;
-    height: 5px;
+    height: .1vh;
     border-radius: 2em;
-    margin: 5px 0 20px 0;
+    margin: .5vh 0 1vh 0;
 }
 
 
@@ -390,87 +400,93 @@ h3 > span {
 }
 
 .formacion_titulo {
-    border-radius: .5em;
-    width: 99.5%;
-    min-width: 250px;
-    height: 40px;
+    border-radius: .4em;
+    width: 99%;
+    height: 50%;
     background-color: #000;
     text-align: center;
     align-content: center;
-    font-size: 160%;
-    margin-left: .2%;
+    font-size: 1.5vw;
+    margin: auto;
 }
 
-.contenido_formacion {
-    background-color: transparent;
-    display: flex;
-    padding: 3% 5%;
-    box-sizing: content-box;
+.t1formacion {
+    margin-top: 5%;
 }
 
-.educacion {
-    background-color: transparent;
+.t2formacion {
+    margin-top: 1%;
 }
 
 .tituloformacion  {
-    background-color: transparent;
     color: #000;
     font-weight: 900;
+    width: 50%;
+    margin: auto;
+    font-size: 1vw;
 }
 
-.tituloexp {
-    background-color: transparent;
-    color: #000;
-    font-weight: 900;
+.educacion {
+    display: flex;
+    gap: 2vw;
+    width: 50%;
+    margin: auto;
 }
 
-.experiencia {
-    background-color: transparent;
-    width: 100%;
-    margin-left: 5%;
-}
-
-.eduacion_universidad, .eduacion_preparatoria, .certificacion_finanzas, .eduacion_ingles, .eduacion_ingles2 {
+.eduacion_universidad, .eduacion_preparatoria, .certificacion_finanzas {
     border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 0 5%;
-    margin-bottom: 6% ;
+    border-radius: .4em;
+    padding: 0 2%;
     background-color: #000;
-    width: 95%;
-}
-
-.eduacion_ingles2 {
-    margin-bottom: 0% ;
-}
-
-.educaciontextouni, .educaciontextoprepa, .educaciontextocert, .educaciontextoingles, .educaciontextoingles2 {
-    padding-top: 1%;
+    width: 90%;
+    font-size: 1vw;
 }
 
 .eduacionperiodouni, .eduacionperiodoprepa, .eduacionperiodocert, .eduacionperiodoingles, .eduacionperiodoingles2 {
     background-color: red;
-    width: 140px ;
+    width: 70%;
     text-align: center;
     padding: 5px 2px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: .4em;
+}
+
+.t1experiencia{
+    width: 100%;
+}
+
+.experiencia, .subboxexp1 {
+    width: 100%;
+}
+
+.tituloexp {
+    color: #000;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1vw;
 }
 
 .experienciaharly, .experiencialiverpool, .experiencialiverpool2 {
     border: 1px solid #eee;
-    border-radius: 8px;
+    width: 50%;
+    border-radius: .4em;
     padding: 0 3%;
-    margin-bottom: 1.5% ;
+    margin-bottom: 1% ;
     background-color: #000;
+    margin: auto;
+    margin-top: 1%;
+    font-size: 1vw;
 }
 
 .empresa1ano, .empresa2ano {
     background-color: red;
-    width: 100px ;
+    width: 25% ;
     text-align: center;
     padding: 5px 2px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: .4em;
 }
 
 .contenidopuesto1, .contenidopuesto2, .contenidopuesto3 {
@@ -507,34 +523,32 @@ h3 > span {
 }
 
 .proyectos_titulo {
-    border-radius: .5em;
-    width: 99.5%;
-    min-width: 250px;
-    height: 40px;
+    border-radius: .4em;
+    width: 99%;
+    height: 50%;
     background-color: #000;
     text-align: center;
     align-content: center;
-    font-size: 160%;
-    margin-left: .2%;
-    margin-bottom: 5%;
+    font-size: 1.5vw;
+    margin: auto;
 }
 
 .contenidoproyectos {
-    background-color: transparent;
+    padding-top: 5%;
 }
 
 .linea1, .linea2, .linea3, .linea4, .linea5 {
     margin-bottom: 1%;
-    height: 100vh;
+    height: auto;
     padding: 1%;
 }
 
 .boardproyectos, .boardproyectos3, .boardproyectos5 {
-    background: linear-gradient(to right, #eee, black ),url();
+    background: linear-gradient(to right, black, red ),url();
     background-size: contain;
-    border-radius: .8em;
-    width: 95%;
-    height: 95%;
+    border-radius: .4em;
+    width: 50%;
+    height: auto;
     margin: auto;
     padding: 1%;
     display: flex;
@@ -542,11 +556,11 @@ h3 > span {
 }
 
 .boardproyectos2, .boardproyectos4 {
-    background: linear-gradient(to right, black, #eee ),url();
+    background: linear-gradient(to right, red, black ),url();
     background-size: contain;
-    border-radius: .8em;
-    width: 95%;
-    height: 95%;
+    border-radius: .4em;
+    width: 50%;
+    height: auto;
     margin: auto;
     padding: 1%;
     display: flex;
@@ -556,8 +570,7 @@ h3 > span {
 .detalleproyecto1 {
     background-color: black;
     width: 100%;
-    height: 100%;
-    border-radius: .8em;
+    border-radius: .4em;
     border: solid 2px #ddd; 
     margin: auto .5%;
 }
@@ -566,9 +579,8 @@ h3 > span {
     color: #eee;
     margin: auto;
     width: 100%;
-    font-weight: bolder;
     text-align: center;
-    border-radius: .8em;
+    border-radius: .4em;
     padding-bottom: 2%;
 }
 
@@ -577,15 +589,17 @@ h3 > span {
     margin: auto;
     width: 100%;
     text-align: center;
+    font-size: 1vw;
 }
 
 .textotarjeta {
-    font-size: 70%;
     background-color: transparent;
     margin: auto;
-    margin-top: 5%;
-    width: 90%;
+    margin-top: 7%;
+    width: 85%;
     text-align: center;
+    font-size: 1vw;
+    text-align: justify;
 }
 
 .links {
@@ -594,13 +608,12 @@ h3 > span {
 }
 
 .linkproyectos {
-    margin: 50px auto 0 auto;
-    width: 30%;
-    min-width: 60%;
+    margin: 3vh auto 1.5vh auto;
+    width: 60%;
     padding: 5px;
-    border-radius: .8em;
+    border-radius: .4em;
     border: 2px solid #eee;
-    font-size: 70%;
+    font-size: 1vw;
 }
 
 .linkproyectos:hover {
@@ -608,13 +621,12 @@ h3 > span {
     font-weight: bold;
     color: #eee;
     background-color: red;
-    margin: 50px auto 0 auto;
-    width: 30%;
-    min-width: 60%;
+    margin: 3vh auto 1.5vh auto;
+    width: 60%;
     padding: 5px;
-    border-radius: .8em;
-    border: 3px solid white;
-    font-size: 70%;
+    border-radius: .4em;
+    border: 2px solid #eee;
+    font-size: 1vw;
 }
 
 .logo_horasextras {
@@ -629,7 +641,7 @@ h3 > span {
     margin: 10% auto;
     width: 95%;
     height: 100%;
-    border-radius: .9em;
+    border-radius: .4em;
     border: 2px solid #eee    ;
 }
 
@@ -655,30 +667,36 @@ h3 > span {
 
 .contacto_titulo {
     border-radius: .4em;
-    width: 99.5%;
-    min-width: 250px;
-    height: 40px;
+    width: 99%;
+    height: 50%;
     background-color: #000;
     text-align: center;
     align-content: center;
-    font-size: 160%;
-    margin-left: .2%;
-    margin-bottom: 5%;
+    font-size: 1.5vw;
+    margin: auto;
 }
 
-.contenidocontacto {
+.t1contacto {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
 }
 
 .referencias{
     margin: auto;
+    font-size: 1vw;
 }
-
 
 .referenciaslink {
     text-decoration: none;
     color: #eee;
 }
 
+.contenido_exp {
+    background-color: transparent;
+    margin-top: 1.5%;
+    margin-bottom: .3%;
+}
